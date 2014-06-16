@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package Model;
 
 /**
@@ -12,11 +11,38 @@ package Model;
  */
 public class MorrisTreeNode {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    int val;
+    MorrisTreeNode left;
+    MorrisTreeNode right;
+
+    public MorrisTreeNode(int x) {
+        val = x;
+        left = null;
+        right = null;
     }
-    
+
+    public int getVal() {
+        return val;
+    }
+
+    public void setVal(int val) {
+        this.val = val;
+    }
+
+    public MorrisTreeNode getLeft() {
+        return left;
+    }
+
+    public void setLeft(MorrisTreeNode left) {
+        this.left = left;
+    }
+
+    public MorrisTreeNode getRight() {
+        return right;
+    }
+
+    public void setRight(MorrisTreeNode right) {
+        this.right = right;
+    }
+
 }
